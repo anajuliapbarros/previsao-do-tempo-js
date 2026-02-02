@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <h1 class="titulo-pagina">Previsão do Tempo</h1>
+
+    <div class="weather-card">
+        <div class="search">
+            <input type="text" id="cidadeInput" placeholder="Digite a cidade...">
+            <button onclick="buscarClima()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <p id="mensagemErro" class="escondido">
+            Cidade não encontrada!
+        </p>
+
+        <div id="resultado" class="resultado escondido">
+            <h2 id="nomeCidade">--</h2>
+            <img id="iconeClima" src="" alt="Clima">
+            <h1 id="temperatura">--</h1>
+            <p id="descricao">--</p>
+            <div class="detalhes">
+                <span><i class="fa-solid fa-droplet"></i> Umidade: <b id="umidade">--</b></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+body {
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    gap: 30px;
+}
+
+.titulo-pagina {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.weather-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 2.5rem;
+    border-radius: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    text-align: center;
+    width: 320px;
+    max-width: 90%;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    border: none;
+    padding: 12px 15px;
+    border-radius: 30px;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+button {
+    background: #ff8c00;
+    border: none;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background: #ffa500;
+    transform: scale(1.1);
+}
+
+/* ESTILO DA MENSAGEM DE ERRO */
+#mensagemErro {
+    color: #ff6b6b;
+    background: rgba(255, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    font-weight: bold;
+    margin-top: 10px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.resultado {
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#nomeCidade {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+#iconeClima {
+    width: 100px;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+}
+
+#temperatura {
+    font-size: 3.5rem;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+#descricao {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.detalhes {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.escondido {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
