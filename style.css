@@ -72,7 +72,6 @@ button:hover {
     transform: scale(1.1);
 }
 
-/* ESTILO DA MENSAGEM DE ERRO */
 #mensagemErro {
     color: #ff6b6b;
     background: rgba(255, 0, 0, 0.1);
